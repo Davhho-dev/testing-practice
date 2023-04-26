@@ -29,3 +29,11 @@ test("Passing all capitalized string 'HELLO WORLD' should return 'Hello world'",
 test("Passing string with first char already capitalize 'Hello' should return 'Hello'", () => {
     expect(capitalize("Hello")).toBe("Hello");
 });
+
+test("@#$ should be No valid characters", () => {
+    expect(capitalize("@#$")).toBe("No valid characters");
+});
+
+test("123 should be No valid characters", () => {
+    expect(capitalize("123")).toBe("No valid characters");
+});
