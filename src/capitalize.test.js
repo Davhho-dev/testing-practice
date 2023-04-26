@@ -17,3 +17,11 @@ test("Throw error if a string argument is not passed", () => {
 test("Passing multiworded string 'hello world' should return 'Hello world'", () => {
     expect(capitalize("hello world")).toBe("Hello world");
 });
+
+test("Passing string argument with symbols 'he!!o world' should return 'He!!o world'", () => {
+    expect(capitalize("he!!0 world")).toBe("He!!0 world");
+})
+
+test("Passing all capitalized string 'HELLO WORLD' should return 'Hello world'", () => {
+    expect(capitalize("HELLO WORLD")).toBe("Hello world");
+})
