@@ -13,3 +13,7 @@ test("Throw error if a string argument is not passed", () => {
         capitalize(1);
     }).toThrow();
 });
+
+test("Passing multiworded string 'hello world' should return 'Hello world'", () => {
+    expect(capitalize("hello world")).toBe("Hello world");
+});
