@@ -18,7 +18,7 @@ test("Passing multiworded string 'hello world' should return 'Hello world'", () 
     expect(capitalize("hello world")).toBe("Hello world");
 });
 
-test("Passing string argument with symbols 'he!!o world' should return 'He!!o world'", () => {
+test("Passing string argument with symbols/numbers 'he!!0 world' should return 'He!!0 world'", () => {
     expect(capitalize("he!!0 world")).toBe("He!!0 world");
 });
 
