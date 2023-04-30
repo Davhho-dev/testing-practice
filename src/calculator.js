@@ -8,12 +8,11 @@ const calculator = (x, y) => {
     
     const add = (x, y) => {
         if(notValidArg(x, y)) return "Arguments contain a non number";
-        else {
             sum = x + y;
             console.log(sum);
             return sum;
-        }
     }
+
     return {add};
 }
 
