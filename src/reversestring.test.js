@@ -29,3 +29,7 @@ test("Reversing string that contains numbers", () => {
 test("Reversing special character strings", () => {
     expect(reverseString("!@#$")).toBe("$#@!");
 });
+
+test("Reversing string with numbers and special characters", () => {
+    expect(reverseString("H3!!o W0rld")).toBe("dlr0W o!!3H");
+});
