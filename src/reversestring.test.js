@@ -17,3 +17,7 @@ test("Passing nonstring throws error", () => {
 test("Reversing strings with multiple words", () => {
     expect(reverseString("Hello World")).toBe("dlroW olleH");
 });
+
+test("Reversing number strings", () => {
+    expect(reverseString("123")).toBe("321");
+});
