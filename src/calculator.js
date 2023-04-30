@@ -13,7 +13,17 @@ const calculator = (x, y) => {
             return sum;
     }
 
-    return {add};
+    const subtract = (x, y) => {
+        if(notValidArg(x, y)) return "Arguments contain a non number";
+        sum = x - y;
+        console.log(sum);
+        return sum;
+    }
+
+    return {
+        add,
+        subtract
+    };
 }
 
 module.exports = calculator;
