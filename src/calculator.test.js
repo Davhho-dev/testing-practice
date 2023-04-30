@@ -9,9 +9,14 @@ test("Adding two numbers", () => {
 test("Check for non number arguments", () => {
     expect(calc.add(10, "x")).toBe("Arguments contain a non number");
     expect(calc.subtract(10, "5")).toBe("Arguments contain a non number");
+    expect(calc.multiply("5", 5)).toBe("Arguments contain a non number");
 });
 
 test("Subtracting two numbers", () => {
     expect(calc.subtract(20, 10)).toBe(10);
+});
+
+test("Multiplying two numbers", () => {
+    expect(calc.multiply(5, 5)).toBe(25);
 });
 
