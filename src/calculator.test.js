@@ -24,4 +24,3 @@ test("Multiplying two numbers", () => {
 test("Dividing two numbers", () => {
     expect(calc.divide(10, 2)).toBe(5);
 });
-
