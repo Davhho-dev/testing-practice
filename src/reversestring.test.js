@@ -21,3 +21,7 @@ test("Reversing strings with multiple words", () => {
 test("Reversing number strings", () => {
     expect(reverseString("123")).toBe("321");
 });
+
+test("Reversing string that contains numbers", () => {
+    expect(reverseString("h3ll0 W0r1d")).toBe("d1r0W 0ll3h");
+});
