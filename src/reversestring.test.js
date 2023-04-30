@@ -25,3 +25,7 @@ test("Reversing number strings", () => {
 test("Reversing string that contains numbers", () => {
     expect(reverseString("h3ll0 W0r1d")).toBe("d1r0W 0ll3h");
 });
+
+test("Reversing special character strings", () => {
+    expect(reverseString("!@#$")).toBe("$#@!");
+});
