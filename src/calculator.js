@@ -20,9 +20,17 @@ const calculator = (x, y) => {
         return sum;
     }
 
+    const multiply = (x, y) => {
+        if(notValidArg(x, y)) return "Arguments contain a non number";
+        sum = x * y;
+        console.log(sum);
+        return sum;
+    }
+
     return {
         add,
-        subtract
+        subtract,
+        multiply
     };
 }
 
