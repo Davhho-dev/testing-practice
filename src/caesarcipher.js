@@ -4,6 +4,7 @@ function caesarCipher(str, shift) {
     let result = "";
     let shiftedAlphabet = encryptKey(shift);
     for(let i = 0; i < str.length; i++) {
+        if(str.charAt(i) === " ") result += " ";
         let alphaIndex = alphabet.indexOf(str.charAt(i)); //locate index of each char of string argument
         result += shiftedAlphabet.charAt(alphaIndex);
     }
