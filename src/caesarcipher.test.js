@@ -11,3 +11,7 @@ test("Shifting string with one word", () => {
 test("shifting string with two word and accounting for space", () => {
     expect(caesarCipher("hello world", 2)).toBe("jgnnq yqtnf");
 });
+
+test("shifting all caps string argument returns correct lowercase shifted result", () => {
+    expect(caesarCipher("HELLO world", 10)).toBe("rovvy gybvn");
+});
