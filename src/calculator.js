@@ -9,28 +9,24 @@ const calculator = (x, y) => {
     const add = (x, y) => {
         if(notValidArg(x, y)) return "Arguments contain a non number";
             sum = x + y;
-            console.log(sum);
             return sum;
     }
 
     const subtract = (x, y) => {
         if(notValidArg(x, y)) return "Arguments contain a non number";
         sum = x - y;
-        console.log(sum);
         return sum;
     }
 
     const multiply = (x, y) => {
         if(notValidArg(x, y)) return "Arguments contain a non number";
         sum = x * y;
-        console.log(sum);
         return sum;
     }
 
     const divide = (x, y) => {
         if(notValidArg(x, y)) return "Arguments contain a non number";
         sum = x / y;
-        console.log(sum);
         return sum;
     }
 
