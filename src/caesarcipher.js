@@ -1,8 +1,14 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 function caesarCipher(str, shift) {
-    console.log(alphabet.length);
-    return encryptKey(shift);
+    let result = "";
+    let shiftedAlphabet = encryptKey(shift);
+    for(let i = 0; i < str.length; i++) {
+        let alphaIndex = alphabet.indexOf(str.charAt(i)); //locate index of each char of string argument
+        result += shiftedAlphabet.charAt(alphaIndex);
+    }
+    console.log(result);
+    return result;
 }
 
 function encryptKey(shift) {
