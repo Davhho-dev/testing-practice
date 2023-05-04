@@ -5,7 +5,7 @@ function caesarCipher(str, shift) {
     let result = "";
     let shiftedAlphabet = encryptKey(shift);
     for(let i = 0; i < lowerStr.length; i++) {
-        if(lowerStr.charAt(i) === " ") result += " ";
+        if(nonCharacters(str.charAt(i))) result += str.charAt(i);
         let alphaIndex = alphabet.indexOf(lowerStr.charAt(i)); //locate index of each char of string argument
         result += shiftedAlphabet.charAt(alphaIndex);
     }
@@ -25,6 +25,12 @@ function encryptKey(shift) {
     }
     console.log(encryptAlphabet);
     return encryptAlphabet
+}
+
+function nonCharacters(char) {
+    const nonChar = "0123456789`~!@#$%^&*()-_=+[{]};:',<.>/? ";
+    if(nonChar.includes(char)) return true;
+    return false;
 }
 
 module.exports = caesarCipher;
