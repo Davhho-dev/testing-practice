@@ -25,7 +25,7 @@ test("shifting string of only nonchars should return the same", () => {
     expect(caesarCipher("!@#$%", 2)).toBe("!@#$%");
 });
 
-test("Passing a non string argument should return an error", () => {
+test("Passing a non string argument should throw an error", () => {
     expect(() => {
         caesarCipher(123, 2);
     }).toThrow("Not a String");
@@ -33,4 +33,10 @@ test("Passing a non string argument should return an error", () => {
 
 test("Default shift key to 0 if no shift argument is passed", () => {
     expect(caesarCipher("woah")).toBe("woah");
+});
+
+test("Passing negative shift argument should throw an error", () => {
+    expect(() => {
+        caesarCipher("It's a me, Mario", -1);
+    }).toThrow("No negative numbers");
 });
