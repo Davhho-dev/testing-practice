@@ -30,3 +30,7 @@ test("Passing a non string argument should return an error", () => {
         caesarCipher(123, 2);
     }).toThrow("Not a String");
 });
+
+test("Default shift key to 0 if no shift argument is passed", () => {
+    expect(caesarCipher("woah")).toBe("woah");
+});
