@@ -1,6 +1,7 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 function caesarCipher(str, shift) {
+    if(typeof str !== "string") throw new Error("Not a String");
     const lowerStr = str.toLowerCase();
     let result = "";
     let shiftedAlphabet = encryptKey(shift);
