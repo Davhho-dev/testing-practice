@@ -19,3 +19,14 @@ test("shifting all caps string argument returns correct lowercase shifted result
 test("shifting string with intergers", () => {
     expect(caesarCipher("h3ll0 wor1d", 7)).toBe("o3ss0 dvy1k");
 });
+
+test("shifting string of only nonchars should return the same", () => {
+    expect(caesarCipher("123456", 5)).toBe("123456");
+    expect(caesarCipher("!@#$%", 2)).toBe("!@#$%");
+});
+
+test("Passing a non string argument should return an error", () => {
+    expect(() => {
+        caesarCipher(123, 2);
+    }).toThrow("Not a String");
+});
