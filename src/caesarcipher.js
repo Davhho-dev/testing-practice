@@ -11,7 +11,6 @@ function caesarCipher(str, shift = 0) {
         let alphaIndex = alphabet.indexOf(lowerStr.charAt(i)); //locate index of each char of string argument
         result += shiftedAlphabet.charAt(alphaIndex);
     }
-    console.log(result);
     return result;
 }
 
@@ -25,7 +24,6 @@ function encryptKey(shift) {
         }
         else encryptAlphabet += alphabet.charAt(i + shift);
     }
-    console.log(encryptAlphabet);
     return encryptAlphabet
 }
 
