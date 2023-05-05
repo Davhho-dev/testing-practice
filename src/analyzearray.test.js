@@ -25,3 +25,9 @@ test("Test function to return an object with average key", () => {
         })
     );
 });
+
+test("Throw error for empty arrays", () => {
+    expect(() => {
+        analyzeArray([]);
+    }).toThrow("Empty array");
+});

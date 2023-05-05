@@ -1,10 +1,11 @@
 function analyzeArray(arr) {
-   return {
-    average: average(arr),
-    min: min(arr),
-    max: max(arr),
-    length: arr.length
-   }
+    if(arr.length === 0) throw new Error("Empty array");
+    return {
+        average: average(arr),
+        min: min(arr),
+        max: max(arr),
+        length: arr.length
+    }
 }
 
 function average(arr) {
