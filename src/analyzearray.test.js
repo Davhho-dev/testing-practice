@@ -1,8 +1,8 @@
 const analyzeArray = require("./analyzearray");
 
-// test("Test average function", () => {
-//     expect(analyzeArray([5, 5, 5])).toBe(5);
-// });
+test("Test average function", () => {
+    expect(analyzeArray([5, 5, 5])).toBe(5);
+});
 
 test("Test function to return an object with average key", () => {
     expect(analyzeArray([5, 5, 5])).toEqual(
@@ -26,8 +26,6 @@ test("Test function to return an object with average key", () => {
     );
 });
 
-test("Throw error for empty arrays", () => {
-    expect(() => {
-        analyzeArray([]);
-    }).toThrow("Empty array");
+test("Return Empty Array string if an empty array is passed", () => {
+    expect(analyzeArray([])).toBe("Empty Array");
 });
