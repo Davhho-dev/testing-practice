@@ -1,4 +1,5 @@
 function analyzeArray(arr) {
+    if(arr === undefined) return undefined;
     if(arr.length === 0) return "Empty Array";
     return {
         average: average(arr),
