@@ -12,7 +12,7 @@ function average(arr) {
     arr.forEach(index => {
         result += index;
     });
-    result = result / arr.length;
+    result = Math.round((result / arr.length) * 100) / 100;
     console.log(result);
     return result;
 }
@@ -32,7 +32,5 @@ function max(arr) {
     });
     return maxResult;
 }
-
-console.log(analyzeArray([5, 5, 5]));
 
 module.exports = analyzeArray;
