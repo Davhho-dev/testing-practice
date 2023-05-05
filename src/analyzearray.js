@@ -1,5 +1,5 @@
 function analyzeArray(arr) {
-    if(arr.length === 0) throw new Error("Empty array");
+    if(arr.length === 0) return "Empty Array";
     return {
         average: average(arr),
         min: min(arr),
