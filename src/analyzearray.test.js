@@ -14,3 +14,14 @@ test("Test function to return an object with average key", () => {
         })
     );
 });
+
+test("Test function to return an object with average key", () => {
+    expect(analyzeArray([10, 8, 2])).toEqual(
+        expect.objectContaining({
+            average: 6.67,
+            min: 2,
+            max: 10,
+            length: 3
+        })
+    );
+});
